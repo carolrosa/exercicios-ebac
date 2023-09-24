@@ -8,12 +8,12 @@ Feature: Calculator
       When I sum 2 + 2
       Then the result should be 4
 
-      Esquema do Cenário: Two numbers sum
+      Scenario Outline: Two numbers sum
       Given I access the calculator
       When I sum <firstNumber> + <secondNumber>
       Then the result should be <result>
 
       Examples:
-      | firstNumber | segundoNumsecondNumberero | resulresulttado |
-      | 2           | 2                         | 4               |
-      | 1           | 10                        | 11              |
+      | firstNumber | secondNumber | result |
+      | 2           | 2            | 4      |
+      | 1           | 10           | 11     |
